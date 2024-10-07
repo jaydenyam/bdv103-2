@@ -1,0 +1,22 @@
+
+# @name createBook
+POST http://localhost:3000/books
+
+{
+  "name": "The Great Gatsby",
+  "author": "F. Scott Fitzgerald",
+  "description": "A novel about the American Dream",
+  "price": 55.99,
+  "image": "https://example.com/great-gatsby.jpg"
+}
+
+###
+@bookId = {{createBook.response.body.id}}
+
+GET http://localhost:3000/books/{{bookId}}
+
+###
+DELETE http://localhost:3000/books/{{bookId}}
+
+###
+GET http://localhost:3000/books

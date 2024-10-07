@@ -1,0 +1,24 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/typescript-node
+{
+	"name": "Node.js & TypeScript",
+	"dockerComposeFile": ["docker-compose.yml"],
+	"service": "dev",
+	"features": {
+		"ghcr.io/devcontainers-contrib/features/tsx:1": {},
+		"ghcr.io/mcmastercce/bvd-103-mcmasterful-books/mcmasterful-books:latest": {}
+	},
+	"workspaceFolder": "/workspace",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"mongodb.mongodb-vscode",
+				"humao.rest-client",
+				"rangav.vscode-thunder-client"
+			]
+		}
+	},
+
+	"remoteUser": "root",
+	"containerUser": "root"
+}
