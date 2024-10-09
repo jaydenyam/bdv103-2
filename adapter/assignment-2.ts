@@ -1,4 +1,4 @@
-import assignment1 from "./assignment-1";
+import assignment1 from "./assignment-2";
 
 export type BookID = string;
 
